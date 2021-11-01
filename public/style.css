@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  height: 100vh;
+  font-family: Roboto;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circle1 {
+  position: absolute;
+  width: 923px;
+  height: 923px;
+  top: -100px;
+  left: -502px;
+  border-radius: 50%;
+  background: radial-gradient(
+    81.25% 81.25% at 67.32% 18.75%,
+    #17b3a9 0%,
+    #0945df 100%
+  );
+  transform: rotate(30deg);
+}
+
+#circle2 {
+  position: absolute;
+  width: 114px;
+  height: 114px;
+  right: 424px;
+  top: 226px;
+  background: radial-gradient(
+    76.75% 76.75% at 70% 23.25%,
+    #17b384 0%,
+    #0938df 100%
+  );
+  border-radius: 50%;
+}
+
+#card1 {
+  position: absolute;
+  width: 300px;
+  height: 450px;
+  right: 177px;
+  top: 260px;
+  transform: rotate(-5deg);
+  background: rgba(224, 221, 232, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
+}
+
+#circle3 {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  right: 43px;
+  top: 555px;
+  border-radius: 50%;
+  background: radial-gradient(
+    76.75% 76.75% at 70% 23.25%,
+    #7717b3 0%,
+    #df09ca 100%
+  );
+}
+
+.info {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  z-index: 9;
+  left: -130px;
+  top: -100px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info__text h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 3.75rem;
+  color: white;
+}
+.info__text p {
+  color: white;
+  font-family: Roboto;
+  text-align: center;
+}
+
+.a {
+  max-width: 1000px;
+  background: rgba(224, 221, 232, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 1500px) {
+  .info{
+  left: 0;
+  }
+  #circle2 {
+    right: 308px;
+  }
+  #card1{
+    right: 63px;
+  }
+  #circle3{
+    right: -92px;
+  }
+
+@media (max-width: 1190px) {
+  #circle1 {
+    width: 737px;
+    height: 858px;
+  }
+
+  #circle2 {
+    right: 294px;
+    top: 227px;
+  }
+  #circle3 {
+    right: -77px;
+    top: 555px;
+  }
+  #card1 {
+    right: 37px;
+    top: 260px;
+  }
+
+  .info {
+    left: 0;
+  }
+
+  .info__text h1{
+    font-size: 1.97rem;
+  }
+  .info__text p{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px){
+
+  .info__text h1{
+    font-size: 1.60rem;
+    font-weight: 400;
+  }
+  .info__text p{
+    font-size: 1rem;
+  }
+ #circle1 {
+    width: 737px;
+    height: 858px;
+  }
+
+  #circle2 {
+    right: 133px;
+    top: 227px;
+  }
+  #circle3 {
+    right: -176px;
+    top: 555px;
+  }
+  #card1 {
+    right: -144px;
+    top: 260px;
+  }
+
+
+}
+
+@media (max-width: 500px){
+
+ #circle1 {
+    width: 737px;
+    height: 858px;
+  }
+
+  #circle2 {
+    right: 133px;
+    top: 513px;
+  }
+  #circle3 {
+    right: -27px;
+    top: 821px;
+  }
+  #card1 {
+    right: -116px;
+    top: 554px;
+  }
+
+
+}
